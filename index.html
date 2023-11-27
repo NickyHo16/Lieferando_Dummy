@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="render()" id="body">
+    <div class="header">
+        <div class="headerMenu">
+
+            <img src="img\truck.png" class="headerIcon">
+            <p>LieferKiste</p>
+
+        </div>
+        <div class="headerMenu2">
+            <img src="img\position.png" class="headerIconPos">
+            <u>Bahnhofstr. 8, 04539 Groitzsch</u>
+        </div>
+        <div class="headerMenu2">
+            <img src="img\german.png" class="headerflag">
+            <img src="img\englisch.jpg" class="headerflag">
+            Menu
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="menuContent">
+            <img src="img\pizza.jpg" class="contentPic">
+
+            <div class="contentRestaurant">
+                <h1>Avanti Pizza</h1>
+                <div class="deliveryClass">
+                    <div><img src="img\clock.png" class="deliveryIcon">
+                        <span> 30 Min. </span>
+                    </div>
+                    <div><img src="img\delivery.png" class="deliveryIcon">
+                        <span> 1,00€</span>
+                    </div>
+                    <div><img src="img\shoppingbag.png" class="deliveryIcon">
+                        <span>min. 7,00€</span>
+                    </div>
+                </div>
+                <div class="menuChoice">
+                    <span class="foodCategory"> Pizza </span>
+                    <span class="foodCategory"> Salat</span>
+                    <span class="foodCategory">Beilagen</span>
+                    <span class="foodCategory">Kids Menü</span>
+                    <span class="foodCategory"> Burger</span>
+                    <span class="foodCategory">Getränke</span>
+                    <span class="foodCategory">Dessert</span>
+                </div>
+                <div class="contentMeals" id="contentMeals">
+                    <div class="pizzaClass">
+                        <div class="menuHead">
+                            <span>
+                                <h2>Pizza Margherita</h2>
+                            </span>
+                            <span><img src="img\plus_circle.png" class="plusCircle"></span>
+
+                        </div>
+                        <span>mit Tomatensauce und Käse</span>
+                        <br>
+                        <span><b>4,50 €</b></span>
+
+
+                    </div>
+
+                    <div class="pizzaClass">
+                        <div class="menuHead">
+                            <span>
+                                <h2>Pizza O Sole Mio</h2>
+                            </span>
+                            <span><img src="img\plus_circle.png" class="plusCircle"></span>
+
+                        </div>
+                        <span>mit Salami, Schinken, Champignons, Peperoni und Oliven</span>
+                        <br>
+                        <span><b>6,50 €</b></span>
+
+
+                    </div>
+
+                    <div class="pizzaClass">
+                        <div class="menuHead">
+                            <span>
+                                <h2>Pizza Caprese</h2>
+                            </span>
+                            <span><img src="img\plus_circle.png" class="plusCircle"></span>
+
+                        </div>
+                        <span>mit Schinken, Mozarella, Tomaten und Basilikum</span>
+                        <br>
+                        <span><b>6,00 €</b></span>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="iconPizza">
+            <img src="img\iconpizza.jpg" class="imgpizza">
+        </div>
+
+
+
+
+        <div class="basked" id="basked">
+            <span class="close d-none" onclick="overlayBasket()"><b>X</b></span>
+            <h2>Warenkorb</h2>
+            <div class="emtyBasked" id="emptyBasket">
+
+            </div>
+            <div class="filledBasked" id="filledBasket">
+                <div class="toFillBasked" id="toFillBasked">
+                </div>
+
+                <div class="minOderValue">
+                    <div class="minOrder" style="display:none">
+                        <div class="orderValue">
+                            <span>Benötigter Betrag, um den <br>
+                                Mindestbestellwert zu erreichen: </span><br>
+                            <span>
+                                <h4>1,50 €</h4>
+                            </span>
+                        </div>
+                        <div>
+                            <span>Leider kannst du noch nicht bestellen. Napoli Pizza-Service liefert erst ab einem
+                                Mindestbestellwert von 8,00 € (exkl. Lieferkosten).
+                            </span><br>
+                        </div>
+                    </div>
+
+
+                    <div class="sumArea" id="sumArea">
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="buttonOverlay" id="buttonDisplay">
+        <div class="responsiveButton" onclick="overlayBasket()">
+            <span>
+                <h3>Warenkorb</h3>
+            </span>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div>© 2022 LieferKiste</div>
+        <div>AGB</div>
+        <div>Datenschutz</div>
+        <div>Impressum</div>
+
+    </div>
+
+</body>
+
+</html>
